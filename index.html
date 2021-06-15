@@ -71,6 +71,50 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+           <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
+                  <img src='images/2020-recovery-rl.png' width="180"></div>
+                <img src='images/2020-recovery-rl.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function nlt_start() {
+                  document.getElementById('nlt_image').style.opacity = "1";
+                }
+
+                function nlt_stop() {
+                  document.getElementById('nlt_image').style.opacity = "0";
+                }
+                nlt_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://sites.google.com/berkeley.edu/recovery-rl/">
+                <papertitle>Recovery RL: Safe Reinforcement Learning with Learned Recovery Zones</papertitle>
+              </a>
+              <br>
+              Brijen Thananjeyan*,
+              <strong>Ashwin Balakrishna*</strong>,
+              Suraj Nair,
+              Michael Luo,
+              Krishnan Srinivasan,
+              Minho Hwang,
+              Joseph E. Gonzalez,
+              Julian Ibarz,
+              Chelsea Finn,
+              Ken Goldberg
+              <br>
+              <em>Robotics and Automation Letters (RA-L) Journal and International Conference on Robotics and Automation (ICRA)</em>, 2021 - <strong>Mentioned in <a href="https://ai.googleblog.com/2021/01/google-research-looking-back-at-2020.html">Google AI Year in Review</a></strong>
+              <br>
+              <a href="https://sites.google.com/berkeley.edu/recovery-rl/">Website</a> /
+              <a href="https://arxiv.org/pdf/2010.15920.pdf">PDF</a> /
+              <a href="data/2020-recovery-rl.bib">Bibtex</a>
+              <p></p>
+              <p>A scalable and robust RL algorithm which optimizes for a combination of expected performance and tail risk under a distribution over learned reward functions.</p>
+            </td>
+          </tr> 
+          
           <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
