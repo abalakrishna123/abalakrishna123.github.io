@@ -294,6 +294,46 @@
           
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
          
+           <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
+                  <img src='images/2021-thrifty-dagger.png' width="180"></div>
+                <img src='images/thrifty-dagger.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function nlt_start() {
+                  document.getElementById('nlt_image').style.opacity = "1";
+                }
+
+                function nlt_stop() {
+                  document.getElementById('nlt_image').style.opacity = "0";
+                }
+                nlt_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://sites.google.com/view/latentspacesafesets">
+                <papertitle>ThriftyDAgger: Budget-Aware Novelty and Risk Gating for Interactive Imitation Learning</papertitle>
+              </a>
+              <br>
+              Ryan Hoque,
+              <strong>Ashwin Balakrishna</strong>,
+              Ellen Novoseller,
+              Albert Wilcox,
+              Daniel S. Brown,
+              Ken Goldberg
+              <br>
+              <em>Conference on Robot Learning (CoRL), 2021 - <strong>Oral Presentation</strong></em>
+              <br>
+              <a href="https://sites.google.com/view/thrifty-dagger/home">Website</a> /
+              <a href="https://arxiv.org/pdf/2109.08273.pdf">PDF</a> /
+              <a href="data/2021-thrifty-dagger.bib">Bibtex</a>
+              <p></p>
+              <p>An algorithm for query-efficient interactive imitation learning which learns to cede control to a supervisor when (1) in novel states or (2) in bottlenecks where task success is unlikely.</p>
+            </td>
+          </tr> 
+          
           <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
