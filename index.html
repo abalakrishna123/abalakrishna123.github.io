@@ -70,7 +70,51 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  
+           <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
+                  <img src='images/2021-mesa.png' width="180"></div>
+                <img src='images/2021-mesa.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function nlt_start() {
+                  document.getElementById('nlt_image').style.opacity = "1";
+                }
 
+                function nlt_stop() {
+                  document.getElementById('nlt_image').style.opacity = "0";
+                }
+                nlt_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://sites.google.com/view/safe-meta-rl/home">
+                <papertitle>MESA: Offline Meta-RL for Safe Adaptation and Fault Tolerance</papertitle>
+              </a>
+              <br>
+              Michael Luo,
+              <strong>Ashwin Balakrishna*</strong>,
+              Brijen Thananjeyan,
+              Suraj Nair,
+              Julian Ibarz,
+              Jie Tan,
+              Chelsea Finn,
+              Ion Stoica,
+              Ken Goldberg
+              <br>
+              <em>NeurIPS Workshop on Safe and Robust Control of Uncertain Systems</em>, 2021 
+              <br>
+              <a href="https://sites.google.com/view/safe-meta-rl/home">Website</a> /
+              <a href="https://arxiv.org/pdf/2112.03575.pdf">PDF</a> /
+              <a href="data/2021-mesa.bib">Bibtex</a>
+              <p></p>
+              <p>Safe exploration by meta-learning risk measures across environments with different dynamics.</p>
+            </td>
+          </tr> 
+          
+          
            <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -298,6 +342,47 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='ff_image'>
+                  <img src='images/2021-legs.png' width="180"></div>
+                <img src='images/2021-legs.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function nlt_start() {
+                  document.getElementById('nlt_image').style.opacity = "1";
+                }
+
+                function nlt_stop() {
+                  document.getElementById('nlt_image').style.opacity = "0";
+                }
+                nlt_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://sites.google.com/view/legs-exp-grasping">
+                <papertitle>LEGS: Learning Efficient Grasping Sets for Exploratory Grasping</papertitle>
+              </a>
+              <br>
+              Leitan Fu,
+              Michael Danielczuk,
+              <strong>Ashwin Balakrishna</strong>,
+              Daniel S. Brown,
+              Jeffrey Ichnowski,
+              Eugen Solowjow,
+              Ken Goldberg
+              <br>
+              <em>Preprint</em>
+              <br>
+              <a href="https://sites.google.com/view/legs-exp-grasping">Website</a> /
+              <a href="https://arxiv.org/pdf/2111.15002.pdf">PDF</a> /
+              <a href="data/2021-legs.bib">Bibtex</a>
+              <p></p>
+              <p>An algorithm for rapidly exploring large sets of grasps on objects with challenging geometries.</p>
+            </td>
+          </tr> 
+          
+           <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
                   <img src='images/2021-thriftydagger.png' width="180"></div>
                 <img src='images/2021-thriftydagger.png' width="180">
               </div>
@@ -367,7 +452,7 @@
               Ellen Novoseller,
               Ken Goldberg
               <br>
-              <em>Preprint</em>, 2021
+              <em>Conference on Automation Science and Engineering (CASE)</em>, 2021
               <br>
               <a href="https://arxiv.org/pdf/2104.00053.pdf">PDF</a> /
               <a href="data/2021-lazy-dagger.bib">Bibtex</a>
