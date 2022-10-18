@@ -32,7 +32,7 @@
               </p>
               <p>I am a Senior Research Scientist at <a href="https://www.nuro.ai/">Nuro</a> working on using ideas from reinforcement and imitation learning for autonomous delivery. 
                 I just wrapped up my PhD in Computer Science at the <a href="http://autolab.berkeley.edu/">AUTOLAB</a> in <a href="https://eecs.berkeley.edu/">UC Berkeley</a> where I developed a number of algorithms
-                for safe and efficient robot learning and studied applications to deformable manipulation, industrial automation, and robot grasping. I did my bachelors degree at <a href="https://www.caltech.edu/">Caltech</a> in Electrical Engineering, where I worked on a number of 
+                for safe and efficient online learning and studied applications to deformable manipulation, industrial automation, and robot grasping. I did my bachelors degree at <a href="https://www.caltech.edu/">Caltech</a> in Electrical Engineering, where I worked on a number of 
                 applications of machine learning and signal processing to scientific problems, primarily in biomedical devices.
               </p>
               <p style="text-align:center">
@@ -54,7 +54,7 @@
               <heading>Research</heading>
               <p>
                 I'm interested in algorithms for imitation learning (IL), reinforcement learning (RL), and control which can be reliably deployed on robotic systems. My research is primarily focused on exploring synergies between ideas in IL, RL, and control theory to develop safe and reliable algorithms for robotic control. 
-                In addition, I am also excited about applications of machine learning, controls, and signal processing in a variety of contexts, including for robot grasping, deformable manipulation, biomedical devices, geophysics, and aeronautics.
+                In addition, I am also excited about applications of machine learning, controls, and signal processing in a variety of contexts, including for navigation, dextrous manipulation, biomedical devices, geophysics, and aeronautics.
               </p>
             </td>
           </tr>
@@ -64,12 +64,52 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Algorithms for Safe RL and Control</heading>
+              <heading>Algorithms for Safe and Efficient Reinforcement Learning</heading>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
   
+        <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
+                  <img src='images/2022-mcac.png' width="180"></div>
+                <img src='images/2022-mcac.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function nlt_start() {
+                  document.getElementById('nlt_image').style.opacity = "1";
+                }
+
+                function nlt_stop() {
+                  document.getElementById('nlt_image').style.opacity = "0";
+                }
+                nlt_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://sites.google.com/view/mcac-rl">
+                <papertitle>Monte Carlo Actor Critic for Sparse Reward Deep Reinforcement Learning from Suboptimal Demonstrations</papertitle>
+              </a>
+              <br>
+              Albert Wilcox,
+              <strong>Ashwin Balakrishna</strong>,
+              Jules Dedieu,
+              Wyame Benslimane,
+              Daniel Brown,
+              Ken Goldberg
+              <br>
+              <em>Conference on Neural Information Processing Systems (NeurIPS)</em>, 2022
+              <br>
+              <a href="https://sites.google.com/view/mcac-rl">Website</a> /
+              <a href="https://arxiv.org/pdf/2210.07432v1.pdf">PDF</a> /
+              <a href="data/2022-mcac.bib">Bibtex</a>
+              <p></p>
+              <p>A simple reinforcement learning algorithm that can be applied to any existing actor critic method to accelerate exploration for sparse reward tasks.</p>
+            </td>
+          </tr> 
+          
            <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -235,6 +275,128 @@
               <p>A scalable and robust RL algorithm which optimizes for a combination of expected performance and tail risk under a distribution over learned reward functions.</p>
             </td>
           </tr> 
+        
+          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
+                  <img src='images/2021-thriftydagger.png' width="180"></div>
+                <img src='images/2021-thriftydagger.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function nlt_start() {
+                  document.getElementById('nlt_image').style.opacity = "1";
+                }
+
+                function nlt_stop() {
+                  document.getElementById('nlt_image').style.opacity = "0";
+                }
+                nlt_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://sites.google.com/view/thrifty-dagger/home">
+                <papertitle>ThriftyDAgger: Budget-Aware Novelty and Risk Gating for Interactive Imitation Learning</papertitle>
+              </a>
+              <br>
+              Ryan Hoque,
+              <strong>Ashwin Balakrishna</strong>,
+              Ellen Novoseller,
+              Albert Wilcox,
+              Daniel S. Brown,
+              Ken Goldberg
+              <br>
+              <em>Conference on Robot Learning (CoRL), 2021 - <strong>Oral Presentation</strong></em>
+              <br>
+              <a href="https://sites.google.com/view/thrifty-dagger/home">Website</a> /
+              <a href="https://arxiv.org/pdf/2109.08273.pdf">PDF</a> /
+              <a href="data/2021-thrifty-dagger.bib">Bibtex</a>
+              <p></p>
+              <p>An algorithm for query-efficient interactive imitation learning which learns to cede control to a supervisor when (1) in novel states or (2) in bottlenecks where task success is unlikely.</p>
+            </td>
+          </tr> 
+          
+          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
+                  <img src='images/2021-lazy-dagger.png' width="180"></div>
+                <img src='images/2021-lazy-dagger.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function nlt_start() {
+                  document.getElementById('nlt_image').style.opacity = "1";
+                }
+
+                function nlt_stop() {
+                  document.getElementById('nlt_image').style.opacity = "0";
+                }
+                nlt_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2104.00053.pdf">
+                <papertitle>LazyDAgger: Reducing Context Switching in Interactive Imitation Learning</papertitle>
+              </a>
+              <br>
+              Ryan Hoque,
+              <strong>Ashwin Balakrishna</strong>,
+              Carl Putterman,
+              Michael Luo,
+              Daniel S. Brown,
+              Daniel Seita,
+              Brijen Thananjeyan,
+              Ellen Novoseller,
+              Ken Goldberg
+              <br>
+              <em>Conference on Automation Science and Engineering (CASE)</em>, 2021
+              <br>
+              <a href="https://arxiv.org/pdf/2104.00053.pdf">PDF</a> /
+              <a href="data/2021-lazy-dagger.bib">Bibtex</a>
+              <p></p>
+              <p>An algorithm for reducing supervisor burden by limiting context switches in interactive imitation learning.</p>
+            </td>
+          </tr> 
+        
+          <tr onmouseout="ff_stop()" onmouseover="ff_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
+                  <img src='images/2019-converging-supervisors.png' width="180"></div>
+                <img src='images/2019-converging-supervisors.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function ff_start() {
+                  document.getElementById('ff_image').style.opacity = "1";
+                }
+
+                function ff_stop() {
+                  document.getElementById('ff_image').style.opacity = "0";
+                }
+                ff_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/1907.03423.pdf">
+                <papertitle>On-Policy Robot Imitation Learning from a Converging Supervisor</papertitle>
+              </a>
+              <br>
+              <strong>Ashwin Balakrishna*</strong>,
+              Brijen Thananjeyan*,
+              Jonathan Lee,
+              Felix Li,
+              Arsh Zahed,
+              Joseph E. Gonzalez,
+              Ken Goldberg
+              <br>
+              <em>Conference on Robot Learning (CoRL), 2019 - <strong>Oral Presentation</strong></em>
+              <br>
+              <a href="https://arxiv.org/pdf/1907.03423.pdf">PDF</a> /
+              <a href="data/2019-converging-supervisors.bib">Bibtex</a>
+              <p></p>
+              <p>A new formulation of imitiation learning from a non-stationary supervisor, associated theoretical analysis, and a practical algorithm to apply this formulation to develeop an RL algorithm which combines the sample efficiency of model-based RL and the fast policy evaluation enabled by model-free policies.</p>
+            </td>
+          </tr> 
           
           <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -366,19 +528,21 @@
             </td>
           </tr> 
         </tbody></table>
+   
+        </tbody></table>
           
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Efficient Online Learning for Robotics</heading>
+              <heading>Algorithms for Robotic Manipulation</heading>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-         
-           <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
+          
+       <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='ff_image'>
@@ -416,88 +580,6 @@
               <a href="data/2021-legs.bib">Bibtex</a>
               <p></p>
               <p>An algorithm for rapidly exploring large sets of grasps on objects with challenging geometries.</p>
-            </td>
-          </tr> 
-          
-           <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='ff_image'>
-                  <img src='images/2021-thriftydagger.png' width="180"></div>
-                <img src='images/2021-thriftydagger.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function nlt_start() {
-                  document.getElementById('nlt_image').style.opacity = "1";
-                }
-
-                function nlt_stop() {
-                  document.getElementById('nlt_image').style.opacity = "0";
-                }
-                nlt_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://sites.google.com/view/thrifty-dagger/home">
-                <papertitle>ThriftyDAgger: Budget-Aware Novelty and Risk Gating for Interactive Imitation Learning</papertitle>
-              </a>
-              <br>
-              Ryan Hoque,
-              <strong>Ashwin Balakrishna</strong>,
-              Ellen Novoseller,
-              Albert Wilcox,
-              Daniel S. Brown,
-              Ken Goldberg
-              <br>
-              <em>Conference on Robot Learning (CoRL), 2021 - <strong>Oral Presentation</strong></em>
-              <br>
-              <a href="https://sites.google.com/view/thrifty-dagger/home">Website</a> /
-              <a href="https://arxiv.org/pdf/2109.08273.pdf">PDF</a> /
-              <a href="data/2021-thrifty-dagger.bib">Bibtex</a>
-              <p></p>
-              <p>An algorithm for query-efficient interactive imitation learning which learns to cede control to a supervisor when (1) in novel states or (2) in bottlenecks where task success is unlikely.</p>
-            </td>
-          </tr> 
-          
-          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='ff_image'>
-                  <img src='images/2021-lazy-dagger.png' width="180"></div>
-                <img src='images/2021-lazy-dagger.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function nlt_start() {
-                  document.getElementById('nlt_image').style.opacity = "1";
-                }
-
-                function nlt_stop() {
-                  document.getElementById('nlt_image').style.opacity = "0";
-                }
-                nlt_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2104.00053.pdf">
-                <papertitle>LazyDAgger: Reducing Context Switching in Interactive Imitation Learning</papertitle>
-              </a>
-              <br>
-              Ryan Hoque,
-              <strong>Ashwin Balakrishna</strong>,
-              Carl Putterman,
-              Michael Luo,
-              Daniel S. Brown,
-              Daniel Seita,
-              Brijen Thananjeyan,
-              Ellen Novoseller,
-              Ken Goldberg
-              <br>
-              <em>Conference on Automation Science and Engineering (CASE)</em>, 2021
-              <br>
-              <a href="https://arxiv.org/pdf/2104.00053.pdf">PDF</a> /
-              <a href="data/2021-lazy-dagger.bib">Bibtex</a>
-              <p></p>
-              <p>An algorithm for reducing supervisor burden by limiting context switches in interactive imitation learning.</p>
             </td>
           </tr> 
           
@@ -576,60 +658,7 @@
               <p></p>
               <p>An algorithm for leveraging priors from general purpose grasping systems to accelerate online grasp exploration on novel, difficult to grasp objects.</p>
             </td>
-          </tr> 
-          
-          <tr onmouseout="ff_stop()" onmouseover="ff_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='ff_image'>
-                  <img src='images/2019-converging-supervisors.png' width="180"></div>
-                <img src='images/2019-converging-supervisors.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function ff_start() {
-                  document.getElementById('ff_image').style.opacity = "1";
-                }
-
-                function ff_stop() {
-                  document.getElementById('ff_image').style.opacity = "0";
-                }
-                ff_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/1907.03423.pdf">
-                <papertitle>On-Policy Robot Imitation Learning from a Converging Supervisor</papertitle>
-              </a>
-              <br>
-              <strong>Ashwin Balakrishna*</strong>,
-              Brijen Thananjeyan*,
-              Jonathan Lee,
-              Felix Li,
-              Arsh Zahed,
-              Joseph E. Gonzalez,
-              Ken Goldberg
-              <br>
-              <em>Conference on Robot Learning (CoRL), 2019 - <strong>Oral Presentation</strong></em>
-              <br>
-              <a href="https://arxiv.org/pdf/1907.03423.pdf">PDF</a> /
-              <a href="data/2019-converging-supervisors.bib">Bibtex</a>
-              <p></p>
-              <p>A new formulation of imitiation learning from a non-stationary supervisor, associated theoretical analysis, and a practical algorithm to apply this formulation to develeop an RL algorithm which combines the sample efficiency of model-based RL and the fast policy evaluation enabled by model-free policies.</p>
-            </td>
-          </tr> 
-   
-        </tbody></table>
-          
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Applications in Challenging Visuomotor Control Tasks</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+         </tr> 
 
          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
