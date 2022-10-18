@@ -193,7 +193,46 @@
               <p>Safe exploration by meta-learning risk measures across environments with different dynamics.</p>
             </td>
           </tr> 
-          
+
+          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
+                  <img src='images/2021-thriftydagger.png' width="180"></div>
+                <img src='images/2021-thriftydagger.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function nlt_start() {
+                  document.getElementById('nlt_image').style.opacity = "1";
+                }
+
+                function nlt_stop() {
+                  document.getElementById('nlt_image').style.opacity = "0";
+                }
+                nlt_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://sites.google.com/view/thrifty-dagger/home">
+                <papertitle>ThriftyDAgger: Budget-Aware Novelty and Risk Gating for Interactive Imitation Learning</papertitle>
+              </a>
+              <br>
+              Ryan Hoque,
+              <strong>Ashwin Balakrishna</strong>,
+              Ellen Novoseller,
+              Albert Wilcox,
+              Daniel S. Brown,
+              Ken Goldberg
+              <br>
+              <em>Conference on Robot Learning (CoRL), 2021 - <strong>Oral Presentation</strong></em>
+              <br>
+              <a href="https://sites.google.com/view/thrifty-dagger/home">Website</a> /
+              <a href="https://arxiv.org/pdf/2109.08273.pdf">PDF</a> /
+              <a href="data/2021-thrifty-dagger.bib">Bibtex</a>
+              <p></p>
+              <p>An algorithm for query-efficient interactive imitation learning which learns to cede control to a supervisor when (1) in novel states or (2) in bottlenecks where task success is unlikely.</p>
+            </td>
+          </tr>        
           
            <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -233,89 +272,7 @@
               <p>Safe and efficient RL from image observations by leveraging suboptimal demonstrations to structure exploration and examples of constraint violations to satisfy user-specified constraints.</p>
             </td>
           </tr> 
-          
-           <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='ff_image'>
-                  <img src='images/2021-pg-broil.png' width="180"></div>
-                <img src='images/2021-pg-broil.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function nlt_start() {
-                  document.getElementById('nlt_image').style.opacity = "1";
-                }
 
-                function nlt_stop() {
-                  document.getElementById('nlt_image').style.opacity = "0";
-                }
-                nlt_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://sites.google.com/view/pg-broil/">
-                <papertitle>Policy Gradient Bayesian Robust Optimization for Imitation Learning</papertitle>
-              </a>
-              <br>
-              Zaynah Javed*,
-              Daniel Brown*,
-              Satvik Sharma,
-              Jerry Zhu,
-              <strong>Ashwin Balakrishna</strong>,
-              Marek Petrik,
-              Anca D. Dragan,
-              Ken Goldberg
-              <br>
-              <em>International Conference on Machine Learning (ICML)</em>, 2021
-              <br>
-              <a href="https://sites.google.com/view/pg-broil/">Website</a> /
-              <a href="https://arxiv.org/pdf/2106.06499.pdf">PDF</a> /
-              <a href="data/2021-pg-broil.bib">Bibtex</a>
-              <p></p>
-              <p>A scalable and robust RL algorithm which optimizes for a combination of expected performance and tail risk under a distribution over learned reward functions.</p>
-            </td>
-          </tr> 
-        
-          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='ff_image'>
-                  <img src='images/2021-thriftydagger.png' width="180"></div>
-                <img src='images/2021-thriftydagger.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function nlt_start() {
-                  document.getElementById('nlt_image').style.opacity = "1";
-                }
-
-                function nlt_stop() {
-                  document.getElementById('nlt_image').style.opacity = "0";
-                }
-                nlt_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://sites.google.com/view/thrifty-dagger/home">
-                <papertitle>ThriftyDAgger: Budget-Aware Novelty and Risk Gating for Interactive Imitation Learning</papertitle>
-              </a>
-              <br>
-              Ryan Hoque,
-              <strong>Ashwin Balakrishna</strong>,
-              Ellen Novoseller,
-              Albert Wilcox,
-              Daniel S. Brown,
-              Ken Goldberg
-              <br>
-              <em>Conference on Robot Learning (CoRL), 2021 - <strong>Oral Presentation</strong></em>
-              <br>
-              <a href="https://sites.google.com/view/thrifty-dagger/home">Website</a> /
-              <a href="https://arxiv.org/pdf/2109.08273.pdf">PDF</a> /
-              <a href="data/2021-thrifty-dagger.bib">Bibtex</a>
-              <p></p>
-              <p>An algorithm for query-efficient interactive imitation learning which learns to cede control to a supervisor when (1) in novel states or (2) in bottlenecks where task success is unlikely.</p>
-            </td>
-          </tr> 
-          
           <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -358,43 +315,45 @@
             </td>
           </tr> 
         
-          <tr onmouseout="ff_stop()" onmouseover="ff_start()">
+           <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='ff_image'>
-                  <img src='images/2019-converging-supervisors.png' width="180"></div>
-                <img src='images/2019-converging-supervisors.png' width="180">
+                  <img src='images/2021-pg-broil.png' width="180"></div>
+                <img src='images/2021-pg-broil.png' width="180">
               </div>
               <script type="text/javascript">
-                function ff_start() {
-                  document.getElementById('ff_image').style.opacity = "1";
+                function nlt_start() {
+                  document.getElementById('nlt_image').style.opacity = "1";
                 }
 
-                function ff_stop() {
-                  document.getElementById('ff_image').style.opacity = "0";
+                function nlt_stop() {
+                  document.getElementById('nlt_image').style.opacity = "0";
                 }
-                ff_stop()
+                nlt_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/1907.03423.pdf">
-                <papertitle>On-Policy Robot Imitation Learning from a Converging Supervisor</papertitle>
+              <a href="https://sites.google.com/view/pg-broil/">
+                <papertitle>Policy Gradient Bayesian Robust Optimization for Imitation Learning</papertitle>
               </a>
               <br>
-              <strong>Ashwin Balakrishna*</strong>,
-              Brijen Thananjeyan*,
-              Jonathan Lee,
-              Felix Li,
-              Arsh Zahed,
-              Joseph E. Gonzalez,
+              Zaynah Javed*,
+              Daniel Brown*,
+              Satvik Sharma,
+              Jerry Zhu,
+              <strong>Ashwin Balakrishna</strong>,
+              Marek Petrik,
+              Anca D. Dragan,
               Ken Goldberg
               <br>
-              <em>Conference on Robot Learning (CoRL), 2019 - <strong>Oral Presentation</strong></em>
+              <em>International Conference on Machine Learning (ICML)</em>, 2021
               <br>
-              <a href="https://arxiv.org/pdf/1907.03423.pdf">PDF</a> /
-              <a href="data/2019-converging-supervisors.bib">Bibtex</a>
+              <a href="https://sites.google.com/view/pg-broil/">Website</a> /
+              <a href="https://arxiv.org/pdf/2106.06499.pdf">PDF</a> /
+              <a href="data/2021-pg-broil.bib">Bibtex</a>
               <p></p>
-              <p>A new formulation of imitiation learning from a non-stationary supervisor, associated theoretical analysis, and a practical algorithm to apply this formulation to develeop an RL algorithm which combines the sample efficiency of model-based RL and the fast policy evaluation enabled by model-free policies.</p>
+              <p>A scalable and robust RL algorithm which optimizes for a combination of expected performance and tail risk under a distribution over learned reward functions.</p>
             </td>
           </tr> 
           
@@ -528,6 +487,46 @@
             </td>
           </tr> 
         </tbody></table>
+  
+        <tr onmouseout="ff_stop()" onmouseover="ff_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
+                  <img src='images/2019-converging-supervisors.png' width="180"></div>
+                <img src='images/2019-converging-supervisors.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function ff_start() {
+                  document.getElementById('ff_image').style.opacity = "1";
+                }
+
+                function ff_stop() {
+                  document.getElementById('ff_image').style.opacity = "0";
+                }
+                ff_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/1907.03423.pdf">
+                <papertitle>On-Policy Robot Imitation Learning from a Converging Supervisor</papertitle>
+              </a>
+              <br>
+              <strong>Ashwin Balakrishna*</strong>,
+              Brijen Thananjeyan*,
+              Jonathan Lee,
+              Felix Li,
+              Arsh Zahed,
+              Joseph E. Gonzalez,
+              Ken Goldberg
+              <br>
+              <em>Conference on Robot Learning (CoRL), 2019 - <strong>Oral Presentation</strong></em>
+              <br>
+              <a href="https://arxiv.org/pdf/1907.03423.pdf">PDF</a> /
+              <a href="data/2019-converging-supervisors.bib">Bibtex</a>
+              <p></p>
+              <p>A new formulation of imitiation learning from a non-stationary supervisor, associated theoretical analysis, and a practical algorithm to apply this formulation to develeop an RL algorithm which combines the sample efficiency of model-based RL and the fast policy evaluation enabled by model-free policies.</p>
+            </td>
+        </tr> 
           
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
@@ -578,83 +577,6 @@
               <p>An algorithm for rapidly exploring large sets of grasps on objects with challenging geometries.</p>
             </td>
           </tr> 
-          
-          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='ff_image'>
-                  <img src='images/2020-grasp-exp.png' width="180"></div>
-                <img src='images/2020-grasp-exp.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function nlt_start() {
-                  document.getElementById('nlt_image').style.opacity = "1";
-                }
-
-                function nlt_stop() {
-                  document.getElementById('nlt_image').style.opacity = "0";
-                }
-                nlt_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://sites.google.com/view/exploratory-grasping/home">
-                <papertitle>Exploratory Grasping: Asymptotically Optimal Algorithms for Grasping Challenging Polyhedral Objects</papertitle>
-              </a>
-              <br>
-              Michael Danielczuk*,
-              <strong>Ashwin Balakrishna*</strong>,
-              Daniel Brown,
-              Shivin Devgon,
-              Ken Goldberg
-              <br>
-              <em>Conference on Robot Learning (CoRL)</em>, 2020
-              <br>
-              <a href="https://sites.google.com/view/exploratory-grasping/home">Website</a> /
-              <a href="https://arxiv.org/pdf/2011.05632.pdf">PDF</a> /
-              <a href="data/2020-grasp-exp.bib">Bibtex</a>
-              <p></p>
-              <p>An asymptotically optimal algorithm for rapidly learning to grasp new objects through online exploration.</p>
-            </td>
-          </tr> 
-          
-          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='ff_image'>
-                  <img src='images/2020-tslp.png' width="180"></div>
-                <img src='images/2020-tslp.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function nlt_start() {
-                  document.getElementById('nlt_image').style.opacity = "1";
-                }
-
-                function nlt_stop() {
-                  document.getElementById('nlt_image').style.opacity = "0";
-                }
-                nlt_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="data/2020-TSLP.pdf">
-                <papertitle>Accelerating Grasp Exploration by Leveraging Learned Priors</papertitle>
-              </a>
-              <br>
-              Katherine Li*,
-              Michael Danielczuk*,
-              <strong>Ashwin Balakrishna*</strong>,
-              Vishal Satish,
-              Ken Goldberg
-              <br>
-              <em>Conference on Automation Science and Engineering (CASE)</em>, 2020
-              <br>
-              <a href="data/2020-TSLP.pdf">PDF</a> /
-              <a href="data/2020-tslp.bib">Bibtex</a>
-              <p></p>
-              <p>An algorithm for leveraging priors from general purpose grasping systems to accelerate online grasp exploration on novel, difficult to grasp objects.</p>
-            </td>
-         </tr> 
 
          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
@@ -838,6 +760,45 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='ff_image'>
+                  <img src='images/2020-grasp-exp.png' width="180"></div>
+                <img src='images/2020-grasp-exp.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function nlt_start() {
+                  document.getElementById('nlt_image').style.opacity = "1";
+                }
+
+                function nlt_stop() {
+                  document.getElementById('nlt_image').style.opacity = "0";
+                }
+                nlt_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://sites.google.com/view/exploratory-grasping/home">
+                <papertitle>Exploratory Grasping: Asymptotically Optimal Algorithms for Grasping Challenging Polyhedral Objects</papertitle>
+              </a>
+              <br>
+              Michael Danielczuk*,
+              <strong>Ashwin Balakrishna*</strong>,
+              Daniel Brown,
+              Shivin Devgon,
+              Ken Goldberg
+              <br>
+              <em>Conference on Robot Learning (CoRL)</em>, 2020
+              <br>
+              <a href="https://sites.google.com/view/exploratory-grasping/home">Website</a> /
+              <a href="https://arxiv.org/pdf/2011.05632.pdf">PDF</a> /
+              <a href="data/2020-grasp-exp.bib">Bibtex</a>
+              <p></p>
+              <p>An asymptotically optimal algorithm for rapidly learning to grasp new objects through online exploration.</p>
+            </td>
+          </tr> 
+          
+          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
                   <img src='images/2020-untangling.png' width="180"></div>
                 <img src='images/2020-untangling.png' width="180">
               </div>
@@ -918,6 +879,44 @@
               <p>A new algorithm for learning symmetry aware visual representations for deformable objects.</p>
             </td>
           </tr> 
+          
+          <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
+                  <img src='images/2020-tslp.png' width="180"></div>
+                <img src='images/2020-tslp.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function nlt_start() {
+                  document.getElementById('nlt_image').style.opacity = "1";
+                }
+
+                function nlt_stop() {
+                  document.getElementById('nlt_image').style.opacity = "0";
+                }
+                nlt_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="data/2020-TSLP.pdf">
+                <papertitle>Accelerating Grasp Exploration by Leveraging Learned Priors</papertitle>
+              </a>
+              <br>
+              Katherine Li*,
+              Michael Danielczuk*,
+              <strong>Ashwin Balakrishna*</strong>,
+              Vishal Satish,
+              Ken Goldberg
+              <br>
+              <em>Conference on Automation Science and Engineering (CASE)</em>, 2020
+              <br>
+              <a href="data/2020-TSLP.pdf">PDF</a> /
+              <a href="data/2020-tslp.bib">Bibtex</a>
+              <p></p>
+              <p>An algorithm for leveraging priors from general purpose grasping systems to accelerate online grasp exploration on novel, difficult to grasp objects.</p>
+            </td>
+         </tr> 
           
           <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
